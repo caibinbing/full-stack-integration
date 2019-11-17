@@ -1,0 +1,88 @@
+python添加水印
+
+pandas读取excel表信息，包括某行，某列
+
+pip添加清华源
+
+python添加log日志
+import logging
+logging.debug('Debugging information')
+logging.info('Informational message')
+logging.warning('Warning:config file %s not found', 'server.conf')
+logging.error('Error occurred')
+logging.critical('Critical error -- shutting down')
+
+main()函数写法
+
+运行参数用法
+
+NameError: name 'raw_input' is not defined
+解决：python3 只有input
+
+ImportError: Missing optional dependency 'xlrd'. Install xlrd >= 1.0.0 for Excel support Use pip or conda to install xlrd.
+解决：安装xlrd
+
+FileNotFoundError: [Errno 2] No such file or directory: 'd'
+
+
+NameError: name 'dataFrame' is not defined
+
+ DeprecationWarning:
+.ix is deprecated. Please use
+.loc for label based indexing or
+.iloc for positional indexing
+
+传参，列表，字典
+方案一：默认参数list=[]，需要添加判断if not list: list = []，否则多次调用方法都是使用同一个数组，数组ID相同。
+
+python生成二维码
+
+ImageDraw.Draw
+ImageFont.truetype('C:\Windows\Fonts\simsunb.ttf', 22)
+
+
+IndexError: list index out of range
+解决：主函数参数问题
+
+TypeError: can't multiply sequence by non-int of type 'float'
+解决：传参出错，传递了string
+
+python中同时获取序列的值和下标位置
+解决：enumerate(sequence, start = 0)
+
+ValueError: image has wrong mode
+
+qr = qrcode.QRCode(
+                version = 32,
+                error_correction = qrcode.constants.ERROR_CORRECT_L,
+                box_size = 10,
+                border = 4,
+            )
+结果：1530*1530
+
+version = 1
+结果：410 * 410
+box_size = 9
+结果369*369
+box_size = 5
+结果185*185
+
+qr = qrcode.QRCode(
+                version = 1,
+                error_correction = qrcode.constants.ERROR_CORRECT_L,
+                box_size = 4,
+                border = 2,
+            )
+结果148*148
+
+OSError: cannot write mode RGBA as JPEG
+解决：保存，再重新打开.conver('RGBA')
+
+python ImageDraw.Draw.text中文乱码
+解决：C:\Windows\Fonts\simsun.ttc
+
+字体水印颜色问题
+解决：fill = 'black'    或者 fill = 'white'
+
+-----------------------------
+1.xlsx 1/ result/ qrdir/
