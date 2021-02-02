@@ -8,7 +8,7 @@
             //设置IP地址和端口
             Jedis jedis = new Jedis("192.168.1.1",6379);
             //设置数据
-            jedis.set("name","milo");
+            jedis.set("name","caibinbing");
             //获取数据
             String name = jedis.get("name");
             System.out.println("name = " + name);
@@ -34,7 +34,7 @@
             try{
                 jedis = jedisPool.getResource();
                 //设置数据
-                jedis.set("name","milo");
+                jedis.set("name","caibinbing");
                 String name = jedis.get("name");
                 System.out.println("name = " + name);
             }catch(Exception e){

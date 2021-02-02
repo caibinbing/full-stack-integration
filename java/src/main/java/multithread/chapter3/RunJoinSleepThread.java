@@ -1,7 +1,5 @@
 package main.java.multithread.chapter3;
 
-import jdk.nashorn.internal.scripts.JO;
-
 import java.time.LocalTime;
 
 public class RunJoinSleepThread {

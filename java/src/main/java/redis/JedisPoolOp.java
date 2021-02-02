@@ -15,7 +15,7 @@ public class JedisPoolOp {
 
         JedisPool jedisPool = new JedisPool(config, "192.168.1.1", 6379);
         Jedis jedis = jedisPool.getResource();
-        jedis.set("name", "milo");
+        jedis.set("name", "caibinbing");
         String name = jedis.get("name");
         System.out.println("name = " + name);
         jedis.close();
