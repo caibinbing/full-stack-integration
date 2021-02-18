@@ -23,7 +23,7 @@ public class SimpleProducer {
         props.put("linger.ms", 1);
         props.put("buffer.memory", 33554432);
         props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
-        Producer<String, String> producer = new KafkaProducer<String, String>(props);
+        Producer<String, String> producer = new KafkaProducer<>(props);
         for (int i = 0; i < 10; ++i) {
             producer.send(new ProducerRecord<>(topicName, Integer.toString(i), Integer.toString(i)));
             System.out.println("Message sent successfully");
